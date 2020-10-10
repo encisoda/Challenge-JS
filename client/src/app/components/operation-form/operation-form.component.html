@@ -1,0 +1,29 @@
+
+  <div class="col-md-4 col-sm-6 offset-md-4 jumbotron">
+
+      <h5>Agrega una Operacion</h5>
+    <hr>
+    <div class="card">
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <input type="text" name="concepto" [(ngModel)]="operation.concept" placeholder="concepto" class="form-control" autofocus>
+          </div>
+          <div class="form-group">
+            <input type="number" name="monto" [(ngModel)]="operation.amount" placeholder="monto" class="form-control" autofocus>
+          </div>
+          <div class="form-group">
+            <select class="custom-select" [(ngModel)]="operation.type" name="tipo">
+              <option selected="">Selecciona tipo de Operacion</option>
+              <option value="Ingreso">Ingreso</option>
+              <option value="Egreso">Egreso</option>
+            </select>
+          </div>
+          <button class="btn btn-success btn-block" (click)="saveNewOperation()">
+            Aceptar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+

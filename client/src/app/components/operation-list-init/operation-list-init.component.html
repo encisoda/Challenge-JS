@@ -1,0 +1,22 @@
+<div class="jumbotron">
+  <h4>Balance</h4>
+  <h4>Ultimas Operaciones</h4>
+  <table class="table">
+    <thead>
+      <tr class="table-secondary">
+        <th scope="col">Concepto</th>
+        <th scope="col">Monto</th>
+        <th scope="col">Tipo de Transferencia</th>
+        <th scope="col">Fecha</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let operation of operations">
+        <td>{{ operation.concept }}</td>
+        <td>{{ operation.amount }}</td>
+        <td>{{ operation.type }}</td>
+        <td>{{ operation.date }}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
