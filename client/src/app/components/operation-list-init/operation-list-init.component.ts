@@ -19,7 +19,7 @@ export class OperationListInitComponent implements OnInit {
 
   ngOnInit(){
 
-    this.usersService.getUser(1).subscribe(
+    this.usersService.getUser('1').subscribe(
       res => {
         this.user = res;
       },
